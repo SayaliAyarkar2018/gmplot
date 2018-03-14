@@ -3,7 +3,10 @@ import math
 import os
 import requests
 
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 from .color_dicts import mpl_color_map, html_color_codes
 
