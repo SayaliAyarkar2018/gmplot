@@ -175,7 +175,7 @@ class GoogleMapPlotter(object):
         self.shapes.append((shape, settings))
 
     def draw(self, htmlfile=None):
-        """Create the html file which include one google map and all points and paths. If 
+        """Create the html file which include one google map and all points and paths. If
         no string is provided, return the raw html. NOTE: This feature may disappear in
         a future version because it creates two very different APIs with a single param.
         Recommended method is to use temporary files until a real motivation appears.
@@ -263,7 +263,7 @@ class GoogleMapPlotter(object):
         lat1 = (math.pi / 180.0) * lat
         lng1 = (math.pi / 180.0) * lng
 
-        r = [x * 10 for x in range(36)]
+        r = [x * 120 for x in range(3)]
         for a in r:
             tc = (math.pi / 180.0) * a
             y = math.asin(
