@@ -305,7 +305,7 @@ class GoogleMapPlotter(object):
         f.write('\t\tvar img = new google.maps.MarkerImage(\'%s\');\n' %
                 (self.coloricon % color))
         f.write('\t\tvar marker = new google.maps.Marker({\n')
-        f.write('\t\ttitle: "%s",\n' % title)
+        f.write('\t\tlabel: "%s",\n' % title)
         f.write('\t\ticon: img,\n')
         f.write('\t\tposition: latlng\n')
         f.write('\t\t});\n')
